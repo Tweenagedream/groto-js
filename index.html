@@ -2,7 +2,7 @@
 <head>
 <script src="/static/compiled.js"></script>
 <script>
-var sock = new WebSocket('ws://127.0.0.1:8000/ws/')
+var sock = new WebSocket('ws://'+window.location.host+'/ws/')
 var helloReq = new proto.HelloRequest()
 
 

@@ -12,4 +12,5 @@ RUN tar xzf *.tar.gz
 
 RUN mv closure-library* closure-library
 ADD entrypoint.sh /root/entrypoint.sh
+RUN chmod +x /root/entrypoint.sh
 ENTRYPOINT ['/root/entrypoint.sh']

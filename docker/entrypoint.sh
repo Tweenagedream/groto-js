@@ -2,7 +2,7 @@
 
 mkdir -p /protos/js /protos/static
 echo "Closure Protos in protos/js, compiled protos in protos/static"
-/root/bin/protoc --js_out=library=$1,binary:/protos/js/ \
+protoc --js_out=library=$1,binary:/protos/js/ \
 	--proto_path /protos/ \
 	/protos/*.proto
 echo "protos/js completed"

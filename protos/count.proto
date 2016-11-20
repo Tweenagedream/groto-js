@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+message CountRequest {
+	int32 count = 1;
+}
+
+message CountReply {
+	int32 count = 1;
+}
+
+message HelloRequest {
+	int32 start = 1;
+}
+
+message HelloReply {
+	bool ack = 1;
+}
+
+message GoodbyeRequest {
+	bool goodbye = 1;
+}
+
+message GoodbyeReply {
+	int32 finalCount = 1;
+}

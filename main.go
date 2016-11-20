@@ -1,7 +1,7 @@
 package main
 
 import (
-	count "github.com/Tweenagedream/polack/protos"
+	count "github.com/Tweenagedream/groto-js/protos"
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/websocket"
 	// "io"
